@@ -1,0 +1,29 @@
+
+<div class="row">
+  <div class="">
+    <h1>Pensamientos</h1>
+    
+  </div>
+</div>
+
+<div class="span6 offset3">
+<% @blogs.each do |blog| %>
+  
+    <h2> <%= link_to blog.title, blog %></h2>
+
+    
+    <% if can? :update, @blog %>
+    <td><%= link_to 'Edit', edit_blog_path(blog),:class => 'btn btn-mini btn-default' %></td>
+    <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' },:class => 'btn btn-mini btn-default' %></td>
+    <% end %>
+  </tr>
+<% end %>
+</div>
+
+<br />
+<br />
+<% if can? :update, @blog %>
+<%= link_to 'New Blog', new_blog_path,:class => 'btn btn-large btn-default' %>
+<% end %>
+<br />
+<br />

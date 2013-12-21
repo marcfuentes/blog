@@ -13,3 +13,47 @@ body { padding-top: 60px; }
 
 // And finally bootswatch style itself
 @import "bootswatch/simplex/bootswatch";
+
+body {
+  background: #FFFFFF   ;
+}
+
+
+
+.navbar-inner{
+    min-height:16px;
+}
+.navbar .navbar-inner .brand {
+    margin-top: 30px;
+}
+
+.navbar .navbar-inner .pull-right {
+    margin-top: 30px;
+}
+
+h1 {
+  
+  font-size: 3.5em;
+  letter-spacing: 2px;
+  margin-bottom: 130px;
+  margin-top: 130px;
+  text-align: center;
+  color: #555;
+}
+
+h2 {
+  
+  font-size: 2.5em;
+  letter-spacing: 2px;
+  margin-bottom: 60px;
+  
+  
+  color: #333;
+}
+
+h3 {
+  
+  font-size: 2.0em;
+  letter-spacing: 1.2px;
+  color: #777;
+}

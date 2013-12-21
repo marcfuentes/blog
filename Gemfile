@@ -21,6 +21,8 @@ gem 'thin'
 gem 'high_voltage'
 gem 'social-share-button'
 gem 'bootstrap-sass-extras'
+gem 'bootstrap-wysihtml5-rails', :require => 'bootstrap-wysihtml5-rails',
+                              :git => 'git://github.com/Nerian/bootstrap-wysihtml5-rails.git'
 
 group :development do
   gem 'better_errors'
