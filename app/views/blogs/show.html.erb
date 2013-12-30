@@ -6,6 +6,9 @@
 
 <div class="span8 offset2">
   <h3><%= @blog.content.html_safe %></h3>
+
+ <p>Comparte en la redes sociales</p> <%= social_share_button_tag(@blog.title) %>
+
   <% if can? :update, @blog %>
   <%= link_to 'Edit', edit_blog_path(@blog),:class => 'btn btn-large btn-default' %> 
 <%= link_to 'Back', blogs_path,:class => 'btn btn-large btn-default' %>
