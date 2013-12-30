@@ -19,11 +19,13 @@
   </tr>
 <% end %>
 </div>
+</div>
+<br />
+<br />
 
-<br />
-<br />
-<% if can? :update, @blog %>
-<%= link_to 'New Blog', new_blog_path,:class => 'btn btn-large btn-default' %>
-<% end %>
+<div class="span2 ">
+<%= link_to 'New Blog', new_blog_path,:class => 'btn btn-large btn-small' %>
+</div>
+
 <br />
 <br />
